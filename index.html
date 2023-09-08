@@ -644,31 +644,9 @@
       }
       backgroundImage = backgroundImage.replace(/,$/gi, ');"');
       let style = '"text-fill-color:transparent;background-clip:text;background-size:200% 100%;opacity: 1;font-size:80px;left:' + 100 + 'px;top:' + (height / 2 - 50) + 'px;background-image: linear-gradient(to right,' + backgroundImage
-      document.getElementsByTagName('body')[0].innerHTML += `<div class="text_ta" style=' + style + '>都看到这里了，心动了嘛(*▽*)！<br/>这是我精心为你打造的哦~<br/>我叫钟广喜，珊珊希望往后的日子里都有你！❥(^_-)<div>
-               <div><input class="aa" type="checkbox" id="box1\`" value="1" onchange="setStyle(this)"/><label for="box1">我愿意</label>            <span id="rBox1"></span></div>
-                <div><input type="checkbox" id="box2\`" onchange="setStyle1(this)"/><label for="box2">我喜欢你</label>            <span id="rBox2"></span></div>
-                <div><input type="checkbox" id="box3\`" onchange="setStyle2(this)"/><label for="box3">我想和你在一起永不分离</label>            <span id="rBox3"></span></div>
-                <div id="ending"></div>
-            </div></div>`
+      document.getElementsByTagName('body')[0].innerHTML += '<div class="text_ta" style=' + style + '>END:宝宝，有没有心动呀(*▽*)！<br/>这是我精心为你打造的哦~<br/>珊珊，你愿意做我的女朋友嘛<br/>希望往后的日子里都有你<br/>长相厮守！<br/>永不分离！<br/>爱你哟！❥(^_-)</div>'
       console.log('ending2');
     }
-      setStyle(input)
-      {
-          document.getElementById(input.id).disabled = true;
-          document.getElementById('rBox1').innerHTML = '——————Thanks♪(･ω･)ﾉ, 我也愿意！';
-      }
-      setStyle1(input)
-      {
-          document.getElementById(input.id).disabled = true;
-          document.getElementById('rBox2').innerHTML = '——————Me Too♪(･ω･)ﾉ, 我也是！';
-      }
-      setStyle2(input)
-      {
-          document.getElementById(input.id).disabled = true;
-          document.getElementById('rBox3').innerHTML = '——————那我们以后就在一起长相厮守哦~';
-          document.getElementById('ending').style.color = 'red';
-          document.getElementById('ending').innerHTML = '———— 拉钩钩！一言为定！~ ————';
-      }
   }
 </script>
 </body>
